@@ -1,2 +1,2 @@
 # macbook-markup
-Markup MacBook using HTML and CSS only
+Markup of a MacBook using HTML and CSS only
