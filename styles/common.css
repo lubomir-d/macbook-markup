@@ -25,19 +25,3 @@ body {
 	width: 100vw;
 	height: 100vh;
 }
-
-.bg {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, calc(-50% - 3.2rem));
-
-	min-width: 78.5rem;
-	height: 100%;
-
-	/*background: url(../top.jpeg) no-repeat;*/
-	background-position:  center;
-	background-size: contain;
-
-	opacity: .9;
-}
