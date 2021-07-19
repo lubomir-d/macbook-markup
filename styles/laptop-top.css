@@ -1,0 +1,69 @@
+.checkbox-invisible {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	margin: 0;
+}
+
+.btn-top-open {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 1.5rem;
+	height: 1.5rem;
+
+	border-radius: 50%;
+
+	background: tomato;
+
+	cursor: pointer;
+
+	z-index: 2;
+}
+
+.checkbox-invisible:checked + .btn-top-open + .laptop-top {
+	flex-wrap: 600;
+	font-size: 3rem;
+	color: blue;
+	transform: perspective(165rem) rotateX(-180deg);
+}
+
+.laptop-top {
+	position: relative;
+
+	width: var(--laptop-size-w);
+	height: var(--laptop-size-h);
+
+	transform-style: preserve-3d;
+    transform-origin: bottom;
+	transform: perspective(165rem) rotateX(-62deg);
+	backface-visibility: visible;
+
+	transition: .3s ease-out;
+
+	z-index: 1;
+}
+
+.laptop-top__top {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	border-radius: var(--laptom-border-radius);
+
+	background: rgb(96,97,101);
+	background: linear-gradient(0deg, rgba(96,97,101,1) 0%, rgba(201,202,207,1) 90%);
+
+
+	box-shadow: 0 0 2rem 0 #7a7b7f inset,
+				-1px 0 1px 0 #7a7b7f inset;
+
+	transform: perspective(165rem) rotateX(-180deg);
+
+	z-index: 2;
+}
