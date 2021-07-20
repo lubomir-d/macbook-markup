@@ -1,35 +1,3 @@
-.checkbox-invisible {
-	width: 0;
-	height: 0;
-	opacity: 0;
-	margin: 0;
-}
-
-.btn-top-open {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-	width: 1.5rem;
-	height: 1.5rem;
-
-	border-radius: 50%;
-
-	background: tomato;
-
-	cursor: pointer;
-
-	z-index: 2;
-}
-
-.checkbox-invisible:checked + .btn-top-open + .laptop-top {
-	flex-wrap: 600;
-	font-size: 3rem;
-	color: blue;
-	transform: perspective(165rem) rotateX(-180deg);
-}
-
 .laptop-top {
 	position: relative;
 
@@ -41,7 +9,7 @@
 	transform: perspective(165rem) rotateX(-62deg);
 	backface-visibility: visible;
 
-	transition: .3s ease-out;
+	transition: .7s ease-out;
 
 	z-index: 1;
 }
@@ -50,6 +18,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	width: 100%;
 	height: 100%;
@@ -66,4 +38,10 @@
 	transform: perspective(165rem) rotateX(-180deg);
 
 	z-index: 2;
+}
+
+.logo {
+	width: 4rem;
+	height: 4rem;
+	object-fit: contain;
 }

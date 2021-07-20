@@ -1,0 +1,106 @@
+:root {
+	--open-btn-color: #fff;
+	--pulse-animation-duration: 1.5s;
+}
+
+.checkbox-invisible {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	margin: 0;
+}
+
+.checkbox-invisible:not(:checked) + .btn-top-open {
+	--open-btn-color: #375e98;
+}
+
+.btn-top-open {
+	position: absolute;
+	bottom: 8rem;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 1.5rem;
+	height: 1.5rem;
+
+	border-radius: 50%;
+	background: var(--open-btn-color);
+	opacity: .8;
+
+	cursor: pointer;
+
+	z-index: 2;
+
+	transition: 1s background;
+}
+
+.btn-top-open:active {
+	animation: fadeOutIn 1s linear;
+}
+
+.btn-top-open::before,
+.btn-top-open::after {
+	content: '';
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 100%;
+	height: 100%;
+
+	border-radius: 50%;
+	background: transparent;
+}
+
+.btn-top-open::before {
+	animation: pulse var(--pulse-animation-duration) linear infinite;
+	border-color: var(--open-btn-color);
+	border-width: .2rem;
+}
+.btn-top-open::after {
+	animation: pulse var(--pulse-animation-duration) linear infinite;
+	animation-delay: 0.75s;
+	border-color: var(--open-btn-color);
+	border-width: .2rem;
+}
+
+.checkbox-invisible:checked + .btn-top-open + .laptop-top {
+	flex-wrap: 600;
+	font-size: 3rem;
+	color: blue;
+	transform: perspective(165rem) rotateX(-180deg);
+}
+
+@keyframes pulse {
+  0% {
+  	width: 100%;
+  	height: 100%;
+	border: 0 solid transparent;
+  }
+  50% {
+  	opacity: 1;
+  }
+  100% {
+  	width: 200%;
+  	height: 200%;
+	border: 1rem solid var(--open-btn-color);
+	opacity: 0;
+  }
+}
+
+@keyframes fadeOutIn {
+  0% {
+	opacity: 1;
+  }
+  10% {
+	opacity: 0;
+  }
+  100% {
+	opacity: 0;
+  }
+  100% {
+	opacity: 1;
+  }
+}

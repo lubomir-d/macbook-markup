@@ -1,5 +1,6 @@
-@import "./styles/common.css";
 @import "./styles/variebles.css";
+@import "./styles/common.css";
+@import "./styles/laptop.css";
 @import "./styles/laptop-top.css";
 @import "./styles/screen.css";
 @import "./styles/laptop-body.css";
