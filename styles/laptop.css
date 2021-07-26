@@ -1,11 +1,18 @@
-:root {
-	--open-btn-color: #fff;
-	--pulse-animation-duration: 1.5s;
-}
+/*** Laptop ***/
 
 .laptop {
 	position: relative;
-	top: -5rem;
+	top: -10rem;
+
+	grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+
+
+    background: transparent;
+
+	transition: .3s transform, .3s perspective;
+	animation: fadeIn 1.4s;
 }
 
 .checkbox-open {
@@ -31,11 +38,26 @@
 
 .checkbox-open:checked + .laptop-open {
 	height: 50%;
+
+	z-index: 10;
 }
 
 .checkbox-open:checked + .laptop-open + .laptop-top {
-	flex-wrap: 600;
-	font-size: 3rem;
-	color: blue;
 	transform: perspective(165rem) rotateX(-180deg);
+}
+
+
+
+
+.test {
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--laptop-body-color-1);
+}
+
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
 }

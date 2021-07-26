@@ -6,4 +6,25 @@
 	--laptop-size-w: 35rem;
 	--laptop-size-h: 24.5rem;
 	--laptom-border-radius:  1.1rem;
+
+	--gray-1: #c3c4c9;
+	--gray-2: #737479;
+	--gray-3: #737479;
+
+	--silver-1: #e6e7e9;
+	--silver-2: #949597;
+	--silver-3: #78797b;
+
+	--gold-1: #f8dac9;
+	--gold-2: #ce9785;
+	--gold-3: #a77760;
+
+	--blue-1: #d6e8fa;
+	--blue-2: #c9dae4;
+	--blue-3: #bac3d0;
+
+	--laptop-body-color-1: var(--gray-1);
+    --laptop-body-color-2: var(--gray-2);
+    --laptop-body-color-3: var(--gray-3);
+
 }

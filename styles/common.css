@@ -18,7 +18,9 @@ body {
 .container {
 	position: relative;
 
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: 10rem auto;
 	justify-content: center;
 	align-items: center;
 

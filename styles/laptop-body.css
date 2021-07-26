@@ -12,7 +12,10 @@
 	border-radius: var(--laptom-border-radius);
 
 	background: var(--laptop-color);
-	background: linear-gradient(0deg, rgba(193,194,199,1) 0%, rgba(115,116,121,1) 92%, rgba(94,95,99,1) 100%);
+	background: linear-gradient(0deg, 
+				var(--laptop-body-color-1) 0%,
+				var(--laptop-body-color-2) 92%,
+				var(--laptop-body-color-3) 100%);
 
 	box-shadow: 0 12px 7px -11px #88888a;
 
@@ -52,7 +55,7 @@
 	width: 15%;
 	height: 100%;
 
-	box-shadow: .001rem 0 .0015rem 0.02rem #4f5054;
+	box-shadow: .001rem 0 .0015rem 0.02rem var(--laptop-body-color-3);
 
 	background: rgb(95,96,101);
 	background: linear-gradient(0deg, rgba(95,96,101,1) 20%, rgba(7,8,11,1) 100%);
@@ -112,5 +115,9 @@
 
 	border-radius: 1.2rem;
 
-	background: linear-gradient(90deg, rgba(99,100,105,1) 0%, rgba(161,162,167,1) 10%, rgba(140,141,146,1) 90%, rgba(99,100,105,1) 100%);
+	background: linear-gradient(90deg,
+				rgba(99,100,105,1) 0%,
+				rgba(161,162,167,1) 10%,
+				rgba(140,141,146,1) 90%,
+				rgba(99,100,105,1) 100%);
 }
