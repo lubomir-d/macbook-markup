@@ -67,7 +67,7 @@
 	background: linear-gradient(90deg, #07080c 0, var(--black-1) 100%);
 	box-shadow: 0 0.5rem 0 0 #acadb2 inset,
 				0 0.25rem 0 0.25rem #7F8282 inset;
-
+	transform: translate3d(0, 0, 1px);
 }
 
 .screen-image {
