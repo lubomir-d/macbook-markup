@@ -1,0 +1,42 @@
+{
+  "name": "macbook-markup",
+  "version": "1.0.0",
+  "description": "Markup of MacBook using only HTML and CSS",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "NODE_ENV=production gulp build",
+    "clean": "gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lubomir-d/macbook-markup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lubomir-d/macbook-markup/issues"
+  },
+  "homepage": "https://github.com/lubomir-d/macbook-markup#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^6.1.2",
+    "delete": "^1.1.0",
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-data": "^1.3.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-svg-sprite": "^2.0.3",
+    "gulp-template": "^6.0.0",
+    "postcss-current-selector": "^0.0.3",
+    "postcss-nested": "^6.0.1",
+    "postcss-nested-ancestors": "^3.0.0",
+    "postcss-nesting": "^12.1.1"
+  }
+}

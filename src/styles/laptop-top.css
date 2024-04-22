@@ -1,0 +1,93 @@
+.laptop-top {
+	position: relative;
+
+	width: var(--laptop-size-w);
+	height: var(--laptop-size-h);
+
+	transform-style: preserve-3d;
+    transform-origin: bottom;
+	transform: perspective(165rem) rotateX(-62deg);
+	backface-visibility: visible;
+
+	transition: .7s ease-out transform;
+
+	z-index: 1;
+
+  &__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: var(--laptom-border-radius);
+
+    background: rgb(96,97,101);
+    background: linear-gradient(0deg, var(--laptop-body-color-3) 0%,
+          var(--laptop-body-color-1) 90%);
+
+
+    box-shadow: 0 0 1rem 0 #ababab inset,
+          -1px 0 1px 0 #f1f1f1 inset;
+
+    transform: perspective(165rem) rotateX(-180deg);
+
+    z-index: 2;
+
+    .logo {
+      width: 4rem;
+      height: 4rem;
+      object-fit: contain;
+    }
+  }
+
+  /*** Screen ***/
+
+  &__screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 1.5rem 1.5rem 0 1.5rem;
+
+    border-radius: var(--laptom-border-radius);
+    background: var(--black-1);
+    background: linear-gradient(90deg, #07080c 0, var(--black-1) 100%);
+    box-shadow: 0 0.5rem 0 0 #acadb2 inset,
+          0 0.25rem 0 0.25rem #7F8282 inset;
+
+    transform: translate3d(0, 0, 1px);
+
+    .screen-image {
+      width: 100%;
+      height: 100%;
+
+      background: #aaa;
+      background: url(wallpaper.webp) no-repeat;
+      background-size: cover;
+    }
+
+    .brand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      height: 3rem;
+
+      font-size: .65rem;
+      color: #eee;
+    }
+  }
+}
