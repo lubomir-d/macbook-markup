@@ -15,7 +15,7 @@ import plumber from 'gulp-plumber';
 import del from 'delete';
 import svgSprite from 'gulp-svg-sprite';
 
-const outputDir = 'static';
+const outputDir = 'dist';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -28,7 +28,7 @@ export function server() {
   return gulpConnect.server({
     host: '0.0.0.0',
     port: 3000,
-    root: 'static/',
+    root: 'dist/',
     livereload: true
   });
 }
