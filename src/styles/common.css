@@ -5,7 +5,7 @@
 }
 
 html {
-	font-size: 100%;
+	font-size: 62.5%;
 }
 
 body {
@@ -26,4 +26,26 @@ body {
 
 	width: 100vw;
 	height: 100vh;
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (min-width: 900px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-height: 920px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-height: 700px) {
+  html {
+    font-size: 62.5%;
+  }
 }
