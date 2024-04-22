@@ -1,7 +1,7 @@
 # macbook-markup
 #### Markup of a MacBook using **HTML and CSS only**
 
-<p>If you're lazy for start project you can clone the repository and open <code>dist/index.html</code> in a browser.</p>
+<p>If you're feeling lazy to start a project, you can clone the repository and open the <code>dist/index.html</code> file in your web browser.</p>
 
 <p>
 For start project:
