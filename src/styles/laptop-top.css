@@ -5,7 +5,7 @@
 	height: var(--laptop-size-h);
 
 	transform-style: preserve-3d;
-    transform-origin: bottom;
+  transform-origin: bottom;
 	transform: perspective(165rem) rotateX(-62deg);
 	backface-visibility: visible;
 
@@ -59,13 +59,13 @@
     width: 100%;
     height: 100%;
 
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    padding: 1.5rem 1.2rem 0 1.2rem;
 
     border-radius: var(--laptom-border-radius);
     background: var(--black-1);
     background: linear-gradient(90deg, #07080c 0, var(--black-1) 100%);
-    box-shadow: 0 0.5rem 0 0 #acadb2 inset,
-          0 0.25rem 0 0.25rem #7F8282 inset;
+    box-shadow: 0 0.25rem 0 0 var(--laptop-body-color-2) inset,
+          0 0.25rem 0 0.25rem var(--laptop-body-color-2) inset;
 
     transform: translate3d(0, 0, 1px);
 
@@ -74,7 +74,7 @@
       height: 100%;
 
       background: #aaa;
-      background: url(wallpaper.webp) no-repeat;
+      background: url("wallpaper.webp") no-repeat;
       background-size: cover;
     }
 
